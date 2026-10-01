@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.cv {
+    display: flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:33%;
+    background-color: #003b4d;
+    color: white;
+}
+
+.main-content{
+    width:67%;
+    padding: 30px;
+
+}
+
+.profile{
+    text-aligin: center;
+}
+
+.profile img{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
