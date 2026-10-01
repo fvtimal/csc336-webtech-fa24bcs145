@@ -35,3 +35,19 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.profile h2 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.profile p{
+    font-size: 17px;
+    margin: 0;
+}
+
+.profile hr{
+    border:none;
+    border-top: 1px solid #35616d;
+    margin:20px 0;
+}
