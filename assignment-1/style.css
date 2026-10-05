@@ -73,3 +73,39 @@ body {
     margin-bottom: 12px;
 }
 
+.main-content h1 {
+    color: #004568;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+.main-content p{
+    font-size: 13px;
+    color: #555;
+}
+
+.main-content ul{
+    list-style: none;
+    padding: 0;
+}
+
+.main-content li{
+    font-size: 12px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+
+
+}
+
+.main-content li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #0066ff;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
