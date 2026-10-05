@@ -68,7 +68,7 @@ body {
 
 .sidebar ul{
     list-style: square;
-    padding: 0;
+    padding: 20px;
 }
 .contact ul{
     list-style: none;
