@@ -27,7 +27,8 @@ body {
 }
 
 .profile{
-    text-aligin: center;
+    text-align: center;
+    
 }
 
 .profile img{
@@ -56,11 +57,13 @@ body {
 .sidebar h2 {
     font-size: 20px;
     font-weight: normal;
+    text-align:center;
 }
 
 .sidebar p{
     font-size: 13px;
     margin: 12px 0;
+    text-align:center;
 }
 
 .sidebar ul{
