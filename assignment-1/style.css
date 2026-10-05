@@ -52,3 +52,24 @@ body {
     margin:20px 0;
 }
 
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.sidebar p{
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar li{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
