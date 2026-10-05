@@ -17,6 +17,7 @@ body {
     width:33%;
     background-color: #003b4d;
     color: white;
+    padding: 25px;
 }
 
 .main-content{
@@ -63,6 +64,10 @@ body {
 }
 
 .sidebar ul{
+    list-style: square;
+    padding: 0;
+}
+.contact ul{
     list-style: none;
     padding: 0;
 
