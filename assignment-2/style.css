@@ -133,6 +133,15 @@ body {
     margin-bottom: 12px;
 }
 
+.product-name-link {
+    color: #222;
+    text-decoration: none;
+}
+
+.product-name-link:hover {
+    color: #d62828;
+}
+
 
 
 /* Price and circular plus button */
