@@ -133,14 +133,7 @@ body {
     margin-bottom: 12px;
 }
 
-.product-name-link {
-    color: #222;
-    text-decoration: none;
-}
 
-.product-name-link:hover {
-    color: #d62828;
-}
 
 
 
@@ -300,4 +293,11 @@ body {
     }
 }
 
+.product-name-link {
+    color: #222;
+    text-decoration: none;
+}
 
+.product-name-link:hover {
+    color: #d62828;
+}
