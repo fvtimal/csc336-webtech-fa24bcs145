@@ -166,3 +166,32 @@ body {
 .add-btn:hover {
     background-color: #a91e1e;
 }
+
+
+/* Footer */
+.site-footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 35px 0 20px;
+    margin-top: 50px;
+}
+
+.site-footer h4 {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.site-footer h4 span {
+    color: #d62828;
+}
+
+.site-footer p {
+    color: #dddddd;
+}
+
+.site-footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
