@@ -1,9 +1,15 @@
 
 # Assignment 2 — E-commerce Website
 
+
 ## Reference Website
+
 - **Name:** Dagwood
 - **URL:** https://dagwood.com.pk/
+
+### Homepage Screenshot
+
+![Dagwood Homepage](imgs/dagwood-reference.png)
 
 ## Project Description
 A static, responsive e-commerce website inspired by Dagwood. It includes a product listing homepage and a product detail page.
