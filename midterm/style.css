@@ -57,7 +57,7 @@ body {
 }
 
 /* Mobile navbar */
-@media (max-width: 767.98px) {
+@media (max-width: 644.98x) {
     .navbar-collapse {
         padding-top: 15px;
     }
@@ -300,4 +300,82 @@ body {
 
 .product-name-link:hover {
     color: #d62828;
+}
+
+
+/* ===== Task 1: Mega-menu (BP = 645px, accent H = 315) ===== */
+:root { --accent: hsl(315, 70%, 45%); }
+
+/* Let the navbar use the full width so 5 links fit */
+.dagwood-navbar > .container { max-width: 1140px; }
+
+/* --- Mobile (below 645px): accordion --- */
+.mega-item { display: none; }
+.mobile-cats details { border-bottom: 1px solid #eeeeee; }
+.mobile-cats summary { padding: 8px 0; font-weight: 600; cursor: pointer; }
+.mobile-cats ul { list-style: none; margin: 0; padding: 0 0 8px 14px; }
+.mobile-cats a { color: #333333; text-decoration: none; display: block; padding: 4px 0; }
+.mobile-cats a:hover { color: var(--accent); }
+
+/* --- Desktop (645px and wider) --- */
+@media (min-width: 645px) {
+  /* replaces Bootstrap's navbar-expand-md at our own breakpoint */
+  .navbar-toggler { display: none; }
+  .navbar-collapse { display: flex !important; flex-basis: auto; }
+  .navbar-nav { flex-direction: row; }
+  .navbar-nav .nav-link { padding: 8px 6px; margin: 0 2px; font-size: 14px; }
+
+  .mobile-cats { display: none; }
+  .mega-item { display: block; }
+
+  /* full-width panel, hidden by default; .navbar is already position:relative */
+  .mega-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1100;               /* above cards, hover effects, sticky bars */
+    background: #ffffff;
+    border-bottom: 3px solid var(--accent);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 24px 0;
+  }
+  /* invisible bridge so hover isn't lost in the gap under the link */
+  .mega-panel::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    height: 18px;
+  }
+
+  /* open on hover OR keyboard focus anywhere inside the item */
+  .mega-item:hover .mega-panel,
+  .mega-item:focus-within .mega-panel { display: block; }
+
+  .mega-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* K = 3 columns */
+    gap: 24px;
+  }
+  .mega-panel h3 {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  .mega-panel ul { list-style: none; margin: 0; padding: 0; }
+  .mega-panel li { margin-bottom: 6px; }
+  .mega-panel a { color: #333333; text-decoration: none; }
+  .mega-panel a:hover,
+  .mega-panel a:focus { color: var(--accent); }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link { margin: 0 10px; padding: 8px 12px; font-size: 16px; }
 }
