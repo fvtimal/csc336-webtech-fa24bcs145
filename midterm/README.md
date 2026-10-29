@@ -1,5 +1,10 @@
-
-# Assignment 2 — E-commerce Website
+Name: Fatima Azhar | Reg#: FA24-BCS-145
+N = 45 | BP = 645px | H = 315 | K = 3
+Files changed (Task 1): index.html, product.html, style.css
+Task 1: Removed navbar-expand-md and recreated the collapse at 645px in CSS.
+Added a "Shop by Category" mega-menu (3 columns, opens with :hover/:focus-within, absolutely positioned, z-index 1100)
+and a <details>/<summary> accordion inside the hamburger menu below 645px.
+AI tools used: Claude
 
 
 ## Reference Website

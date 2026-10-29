@@ -360,6 +360,7 @@ body {
     grid-template-columns: repeat(3, 1fr);   /* K = 3 columns */
     gap: 24px;
   }
+  
   .mega-panel h3 {
     font-size: 15px;
     font-weight: 800;
