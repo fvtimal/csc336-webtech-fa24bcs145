@@ -1,45 +1,48 @@
-Name: Fatima Azhar | Reg#: FA24-BCS-145
-N = 45 | BP = 645px | H = 315 | K = 3
-Files changed (Task 1): index.html, product.html, style.css
-Task 1: Removed navbar-expand-md and recreated the collapse at 645px in CSS.
-Added a "Shop by Category" mega-menu (3 columns, opens with :hover/:focus-within, absolutely positioned, z-index 1100)
-and a <details>/<summary> accordion inside the hamburger menu below 645px.
-AI tools used: Claude
+# Lab Mid Term - Web Technologies
 
+Name: Fatima Azhar
+Roll number: FA24-BCS-145
+N = 45
+BP = 645px
+H = 315 (accent colour: hsl(315, 70%, 45%))
+K = 3
 
-## Reference Website
+Exam date used for Task 2: 29 October 2026. Latest delivery date: 13 December 2026 (exam date + N days).
+Limit per product in Task 3: (N mod 4) + 2 = (45 mod 4) + 2 = 3.
 
-- **Name:** Dagwood
-- **URL:** https://dagwood.com.pk/
+## Files changed
+- index.html (new navbar items, cart badge/mini-cart markup, script link, grid class col-sm-6)
+- product.html (new navbar items, cart badge/mini-cart markup, script link)
+- style.css (mega-menu, checkout form, mini-cart styles, navbar breakpoint)
+- checkout.html (new file)
+- script.js (new file)
 
-### Homepage Screenshot
+## Task 1 - Mega-menu
+I removed Bootstrap's navbar-expand-md class and made the navbar collapse at 645px
+in my own CSS. I added a "Shop by Category" item with 3 columns (K = 3), each with a
+heading and 4 links in a list. It opens on hover or keyboard focus using
+:hover and :focus-within, with no JavaScript. The panel is position:absolute with
+z-index 1100, so it sits above the product grid and does not push the page down.
+Below 645px the same 3 groups are shown as a <details>/<summary> accordion inside the
+hamburger menu, closed by default, each opening independently.
 
-![Dagwood Homepage](imgs/dagwood-reference.png)
+## Task 2 - Checkout form
+checkout.html is linked from the cart. It has two fieldsets (Contact and Delivery)
+and every input has a label joined with for/id. The phone input uses
+pattern="03[0-9]{2}-[0-9]{7}". The delivery date uses min="2026-10-29" and
+max="2026-12-13". Errors (red border and message) show only after interaction using
+:user-invalid. From 645px the fieldsets sit side by side and labels are in a left
+column using CSS Grid; below 645px it is one column with labels above the inputs.
+The submit button is full width at every size.
 
-## Project Description
-A static, responsive e-commerce website inspired by Dagwood. It includes a product listing homepage and a product detail page.
+## Task 3 - Cart badge and mini cart
+script.js keeps the cart in an array of {name, price} objects. The name and price are
+read from the product card itself. Add to Cart increases the badge. The cart icon
+opens or closes a mini-cart panel that lists each item with a Remove button, and the
+total is calculated with reduce(). Each product can be added at most 3 times, after
+which its button says "Limit reached" and is disabled until one is removed. The cart
+is saved in localStorage so the product page and listing page share it, and the
+product page Add to Cart button also works.
 
-## Pages
-- `index.html` — Homepage with categorized product cards, images, prices, and Add to Cart buttons.
-- `product.html` — Product detail page with a larger image, description, quantity selector, and Add to Cart button.
-
-## Technologies Used
-- HTML5
-- CSS3
-- Bootstrap 5
-- Flexbox
-- Bootstrap responsive grid and media queries
-
-## Features
-- Responsive navbar and product grid
-- Product cards organized by category
-- Circular Add to Cart buttons
-- Product image and name linking to the detail page
-- Responsive product detail layout
-- Consistent footer across both pages
-
-## Screenshots
-Add your screenshots of the website at:
-- Mobile width: 375px
-- Tablet width: 768px
-- Desktop width
+## AI tools used
+Claude
