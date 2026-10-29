@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagwood | Food Menu</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<nav class="navbar navbar-expand-md dagwood-navbar">
+    <div class="container">
+
+        <!-- Logo / Brand -->
+        <a class="navbar-brand" href="index.html">
+            DAGWOOD<span>.</span>
+        </a>
+
+        <!-- Hamburger button for mobile -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Our Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#deals">Deals</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Cart on the right -->
+            <a class="cart-link" href="#cart">
+                Cart
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+<!---Product Grid-->
+<main class="container my-5" id="menu">
+
+    <div class="text-center mb-5">
+        <h1 class="menu-title">OUR MENU</h1>
+        <p class="menu-subtitle">
+            Fresh, bold, and made to order
+        </p>
+    </div>
+
+    <!-- CATEGORY 1: SANDWICHES -->
+    <section class="menu-category mb-5" id="sandwiches">
+        <h2 class="category-title">Sandwich with Fries</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <a href="product.html">
+                        <img src="imgs/Cocktail.jpg" alt="Cocktail sandwich">
+                    </a>
+                    
+                    <div class="product-info">
+                        <h5>
+                            <a href="product.html" class="product-name-link">
+                                Cocktail (With Fries)
+                            </a>
+                            
+                        </h5>
+                        <div class="product-price-row">
+                            <p>Rs. 870</p>
+                            <button class="add-btn" type="button"
+                                aria-label="Add Cocktail to cart">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/Fillet Steak.jpg"
+                         alt="Fillet Steak sandwich with fries">
+                    <div class="product-info">
+                        <h5>Fillet Steak (With Fries)</h5>
+                        <div class="product-price-row">
+                            <p>Rs. 850</p>
+                            <button class="add-btn" type="button"
+                                aria-label="Add Fillet Steak to cart">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/Cheese Lover.jpg"
+                         alt="Cheese Lover sandwich with fries">
+                    <div class="product-info">
+                        <h5>Cheese Lover (With Fries)</h5>
+                        <div class="product-price-row">
+    <p>Rs. 850</p>
+    <button class="add-btn" type="button"
+            aria-label="Add Cheese Lover to cart">+</button>
+</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATEGORY 2: CHICKEN AND FRIES -->
+    <section class="menu-category mb-5" id="chicken">
+        <h2 class="category-title">Chicken with Fries</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/chicken tenders + fries.jpg"
+                         alt="Three chicken strips with fries">
+                    <div class="product-info">
+                        <h5>3 Chicken Strips + Fries + Dynamite Sauce</h5>
+                        <div class="product-price-row">
+                            <p>Rs. 600</p>
+                            <button class="add-btn" type="button"
+                                aria-label="Add 3 chicken strips to cart">+</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/chicken tenders6.jpg"
+                         alt="Six chicken strips with dynamite sauce">
+                    <div class="product-info">
+                        <h5>6 Chicken Strips + Dynamite Sauce</h5>
+                        <div class="product-price-row">
+                            <p>Rs. 900</p>
+                            <button class="add-btn" type="button"
+                                aria-label="Add 6 chicken strips to cart">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/Large Fries.jpg" alt="Large French fries">
+
+                    <div class="product-info">
+                        <h5>Large French Fries</h5>
+
+                            <div class="product-price-row">
+                                <p>Rs. 500</p>
+                                <button class="add-btn" type="button"
+                                    aria-label="Add Large Fries to cart">+</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATEGORY 3: BEVERAGES -->
+    <section class="menu-category mb-5" id="beverages">
+        <h2 class="category-title">Beverages</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/pepsi.jpg" alt="Pepsi">
+                    <div class="product-info">
+                        <h5>Pepsi</h5>
+                        <div class="product-price-row">
+    <p>Rs. 150</p>
+    <button class="add-btn" type="button"
+            aria-label="Add Pepsi to cart">+</button>
+</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/7up.jpg" alt="7-UP">
+                    <div class="product-info">
+                        <h5>7-UP</h5>
+                       <div class="product-price-row">
+    <p>Rs. 150</p>
+    <button class="add-btn" type="button"
+            aria-label="Add 7-UP to cart">+</button>
+</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATEGORY 4: DESSERTS -->
+    <section class="menu-category mb-5" id="desserts">
+        <h2 class="category-title">Desserts</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/Walnut Brownie.jpg"
+                         alt="Walnut Chocolate Brownie">
+                    <div class="product-info">
+                        <h5>Walnut Chocolate Brownie</h5>
+                        <div class="product-price-row">
+    <p>Rs. 399</p>
+    <button class="add-btn" type="button"
+            aria-label="Add Walnut Chocolate Brownie to cart">+</button>
+</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <img src="imgs/milk chocolate cookie.jpg"
+                         alt="Milk Chocolate Cookie">
+                    <div class="product-info">
+                        <h5>Milk Chocolate Cookie</h5>
+                        <div class="product-price-row">
+    <p>Rs. 330</p>
+    <button class="add-btn" type="button"
+            aria-label="Add Milk Chocolate Cookie to cart">+</button>
+</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+
+<footer class="site-footer" id="contact">
+    <div class="container text-center">
+        <h4>DAGWOOD<span>.</span></h4>
+        <p>Fresh flavours. Big bites.</p>
+        <p class="copyright">
+            &copy; 2026 Dagwood. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript: makes the hamburger button work -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
+
