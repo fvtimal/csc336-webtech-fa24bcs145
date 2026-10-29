@@ -360,7 +360,7 @@ body {
     grid-template-columns: repeat(3, 1fr);   /* K = 3 columns */
     gap: 24px;
   }
-  
+
   .mega-panel h3 {
     font-size: 15px;
     font-weight: 800;
@@ -379,4 +379,16 @@ body {
 
 @media (min-width: 992px) {
   .navbar-nav .nav-link { margin: 0 10px; padding: 8px 12px; font-size: 16px; }
+}
+
+@media (min-width: 645px) and (max-width: 991.98px) {
+  .navbar-brand { font-size: 22px; }
+  .navbar-nav { flex-wrap: nowrap; }
+  .navbar-nav .nav-link {
+    font-size: 13px;
+    padding: 6px 4px;
+    margin: 0 2px;
+    white-space: nowrap;
+  }
+  .cart-link { padding: 8px 12px; font-size: 14px; }
 }
