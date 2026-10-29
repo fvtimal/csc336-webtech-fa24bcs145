@@ -443,13 +443,31 @@ body {
 /* full-width submit at every size */
 .checkout-submit { display: block; width: 100%; }
  
+/* let fieldsets and inputs shrink instead of overflowing */
+.checkout-grid fieldset { min-width: 0; }
+.field input,
+.field select { min-width: 0; box-sizing: border-box; }
+
 /* BP and wider: fieldsets side by side, labels in a left column */
 @media (min-width: 645px) {
   .checkout-grid { grid-template-columns: 1fr 1fr; }
+  .checkout-grid fieldset { padding: 14px; }
   .field {
-    grid-template-columns: 110px 1fr;  /* label | input */
+    grid-template-columns: 82px minmax(0, 1fr);  /* label | input */
     align-items: center;
-    column-gap: 12px;
+    column-gap: 8px;
   }
+  .field label { font-size: 14px; }
+  .field input,
+  .field select { padding: 6px; font-size: 14px; }
   .field .msg { grid-column: 2; }      /* message under the input */
+}
+
+/* roomy desktop: bigger label column and padding */
+@media (min-width: 992px) {
+  .checkout-grid fieldset { padding: 20px; }
+  .field { grid-template-columns: 110px minmax(0, 1fr); column-gap: 12px; }
+  .field label { font-size: 16px; }
+  .field input,
+  .field select { padding: 9px; font-size: 16px; }
 }
