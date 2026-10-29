@@ -392,3 +392,64 @@ body {
   }
   .cart-link { padding: 8px 12px; font-size: 14px; }
 }
+
+
+/* ===== Task 2: Checkout form (BP = 645px) ===== */
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;          /* below BP: one column */
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.checkout-grid fieldset {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+}
+.checkout-grid legend {
+  float: none;
+  width: auto;
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #d62828;
+}
+ 
+/* each row: label above input (mobile) */
+.field {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.field label { font-weight: 700; }
+.field input,
+.field select {
+  padding: 9px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 100%;
+}
+ 
+/* hidden message, shown only after the user has interacted */
+.msg { display: none; color: #d62828; font-size: 13px; }
+.field input:user-invalid,
+.field select:user-invalid { border: 2px solid #d62828; }
+.field input:user-invalid ~ .msg,
+.field select:user-invalid ~ .msg { display: block; }
+ 
+/* full-width submit at every size */
+.checkout-submit { display: block; width: 100%; }
+ 
+/* BP and wider: fieldsets side by side, labels in a left column */
+@media (min-width: 645px) {
+  .checkout-grid { grid-template-columns: 1fr 1fr; }
+  .field {
+    grid-template-columns: 110px 1fr;  /* label | input */
+    align-items: center;
+    column-gap: 12px;
+  }
+  .field .msg { grid-column: 2; }      /* message under the input */
+}
