@@ -46,7 +46,15 @@
                     </li>
                 </ul>
 
-                <a class="cart-link" href="checkout.html">Cart</a>
+                <div class="cart-wrap">
+                    <a class="cart-link" href="checkout.html" id="cartBtn">Cart <span id="cartBadge" class="cart-badge">0</span></a>
+
+                    <div id="miniCart" class="mini-cart" hidden>
+                        <ul id="cartList"></ul>
+                        <p class="cart-total">Total: Rs. <span id="cartTotal">0</span></p>
+                        <a href="checkout.html" class="mini-checkout">Checkout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -110,5 +118,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

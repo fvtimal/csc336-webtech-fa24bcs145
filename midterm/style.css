@@ -471,3 +471,85 @@ body {
   .field input,
   .field select { padding: 9px; font-size: 16px; }
 }
+
+
+/* ===== Task 3: cart badge and mini cart ===== */
+.cart-wrap { position: relative; display: inline-block; }
+
+.cart-badge {
+  display: inline-block;
+  min-width: 22px;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #d62828;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.mini-cart {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 290px;
+  max-width: 90vw;
+  z-index: 1100;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 14px;
+}
+.mini-cart[hidden] { display: none; }
+.mini-cart ul { list-style: none; margin: 0; padding: 0; max-height: 240px; overflow-y: auto; }
+.mini-cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+}
+.remove-btn {
+  border: none;
+  background: #d62828;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.remove-btn:hover { background: #a91e1e; }
+.cart-total { margin: 10px 0; font-weight: 800; }
+.mini-checkout {
+  display: block;
+  text-align: center;
+  background: #d62828;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* "Limit reached" state of the round + button */
+.add-btn.limit {
+  width: auto;
+  min-width: 0;
+  padding: 0 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #999999;
+  cursor: not-allowed;
+}
+
+/* on phones the cart sits at the left of the opened menu */
+@media (max-width: 644.98px) {
+  .mini-cart { left: 0; right: auto; }
+}
+
+.detail-add-btn:disabled { background: #999999; cursor: not-allowed; }
